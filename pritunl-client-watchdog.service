@@ -1,0 +1,10 @@
+[Unit]
+Description=Pritunl-client-watchdog
+
+[Service]
+ExecStart=/usr/bin/pritunl-client-watchdog.sh id
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
